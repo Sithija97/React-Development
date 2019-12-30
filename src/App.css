@@ -1,4 +1,11 @@
-
-*{
-  background-color:rebeccapurple;
+/* *{
+  background-color: limegreen;
+} */
+.app{
+  background: yellowgreen;
+}
+.TweetScreen{
+  border: 5px,black;
+  color: black;
+  background-color: aliceblue;
 }

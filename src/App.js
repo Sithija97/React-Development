@@ -1,12 +1,13 @@
-import React from 'react';
+import React from "react";
 import './App.css';
-import Tweet from "./components/Tweet";
+
+import Tweet from "./Tweet";
 
 function App() {
   return (
-    <div class="container">
-      <Tweet/>
-    </div>
+    <view className="app">
+      <h1>App Comp</h1>
+    </view>
   );
 }
 
