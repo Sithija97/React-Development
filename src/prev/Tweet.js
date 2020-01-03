@@ -1,5 +1,5 @@
 import React from "react";
-import "./App.css";
+import "./src/App.css"
 export default function Tweet({ name, msg, likes }) {
   return (
     <div className="TweetScreen">
