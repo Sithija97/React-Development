@@ -1,15 +1,17 @@
-import React from "react";
+import React, { Component } from "react";
 import "./App.css";
 
-import Tweet from "./prev/Tweet";
+import firebase from 'firebase';
+import StyleFirebaseAuth from 'react-firebaseui/StyledFirebaseAuth';
 
-
-function App() {
-  return (
-    <div>
-      <h2>Menue</h2>
-    </div>
-  );
+class App extends Component{
+  render(){
+    return(
+      <div>
+        
+      </div>
+    );  
+  }
 }
 
 export default App;
