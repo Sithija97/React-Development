@@ -1,11 +1,15 @@
-import React, { Component } from "react";
+import React from "react";
 import "./App.css";
-import Auth from "./Auth";
-import Loading from "./Loading"
-class App extends Component {
-  render() {
-    return (<Loading/>);
-  }
+import Header from "./Header.jsx";
+import Home from "./Home.jsx";
+
+function App() {
+  return (
+    <React.Fragment>
+      <Header />
+      <Home />
+    </React.Fragment>
+  );
 }
 
 export default App;
