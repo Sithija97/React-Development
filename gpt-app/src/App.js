@@ -3,7 +3,7 @@ import TodoApp from './screens/ToDoApp';
 
 function App() {
   return (
-    <TodoApp/>
+    <p>chat gpt clone</p>
   );
 }
 
