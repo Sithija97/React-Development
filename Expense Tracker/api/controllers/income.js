@@ -35,6 +35,35 @@ exports.getIncomes = async (req, res) => {
     }
 }
 
+exports.updateIncome = async (req, res) => {
+    const { title, amount, category, description, date } = req.body;
+    const { id } = req.params;
+
+    try {
+        // find income by ID
+        const income = await IncomeSchema.findById(id);
+
+        if (!income) {
+            return res.status(404).json({ message: 'income not found' });
+        }
+
+        // update income fields
+        income.title = title || income.title;
+        income.amount = amount || income.amount;
+        income.category = category || income.category;
+        income.description = description || income.description;
+        income.date = date || income.date;
+
+        // save updated income
+        await income.save();
+        res.status(200).json({ message: 'Income updated' });
+    } catch (error) {
+        console.log(error);
+        res.status(500).json({ message: 'Server Error' });
+    }
+};
+
+
 exports.deleteIncome = async (req, res) => {
     const { id } = req.params;
     IncomeSchema.findByIdAndDelete(id)
