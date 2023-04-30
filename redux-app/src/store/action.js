@@ -1,6 +1,6 @@
 export const ADD = () => {
   return {
-    type: "ADD_TEN",
+    type: "counter/incremented",
     payload: 0,
   };
 };
