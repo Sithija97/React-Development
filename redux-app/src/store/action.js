@@ -19,4 +19,12 @@ const Reset = () => {
   };
 };
 
-export { Increment, Decrement, Reset };
+const AddToCart = (item) => {
+  return { type: "ecom/purchase", payload: item };
+};
+
+const RemoveFromCart = (item) => {
+  return { type: "ecom/remove", payload: item };
+};
+
+export { Increment, Decrement, Reset, AddToCart, RemoveFromCart };
