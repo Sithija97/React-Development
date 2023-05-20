@@ -1,15 +1,13 @@
-import logo from "./logo.svg";
 import "./App.css";
-import Counter from "./components/counter";
+import AddPostForm from "./components/addPostForm";
+import PostList from "./components/postList";
 
 function App() {
   return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <Counter />
-      </header>
-    </div>
+    <main className="App">
+      <AddPostForm />
+      <PostList />
+    </main>
   );
 }
 
