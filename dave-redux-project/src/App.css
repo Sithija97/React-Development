@@ -54,6 +54,10 @@ body {
   padding: 0 10% 10%;
 }
 
+.App {
+  padding-top: 5%;
+}
+
 input,
 textarea,
 button,
