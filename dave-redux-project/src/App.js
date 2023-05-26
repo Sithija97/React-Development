@@ -4,7 +4,7 @@ import PostList from "./components/postList";
 
 function App() {
   return (
-    <main className="App">
+    <main className="App-container">
       <AddPostForm />
       <PostList />
     </main>
