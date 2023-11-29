@@ -18,7 +18,7 @@ export const Hero = () => {
           <p className="py-2 text-lg text-gray-600">
             Various versions have evolved over the years, sometimes by accident,
           </p>
-          <form className="p-4 shadow-lg rounded-md flex justify-between">
+          <form className="p-4 shadow-lg rounded-md flex justify-between input-box-shadow">
             <input
               type="text"
               className="bg-white"
