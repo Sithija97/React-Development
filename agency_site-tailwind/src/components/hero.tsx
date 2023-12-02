@@ -1,4 +1,3 @@
-import React from "react";
 import { heroImg } from "../assets";
 import { AiOutlineSearch } from "react-icons/ai";
 
