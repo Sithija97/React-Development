@@ -1,4 +1,3 @@
-import { logo } from "../assets";
 import {
   FaFacebookF,
   FaDribbble,
@@ -6,6 +5,7 @@ import {
   FaInstagram,
   FaBehance,
 } from "react-icons/fa";
+import { logo } from "../assets";
 
 export const Footer = () => {
   return (
