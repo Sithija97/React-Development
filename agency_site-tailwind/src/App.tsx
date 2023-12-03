@@ -1,4 +1,11 @@
-import { Achivements, Companies, Courses, Hero, Navbar } from "./components";
+import {
+  Achivements,
+  Categories,
+  Companies,
+  Courses,
+  Hero,
+  Navbar,
+} from "./components";
 import "./App.css";
 
 const App = () => {
@@ -9,6 +16,7 @@ const App = () => {
       <Companies />
       <Courses />
       <Achivements />
+      <Categories />
     </>
   );
 };

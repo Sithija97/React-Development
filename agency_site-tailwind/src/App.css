@@ -22,4 +22,19 @@
 
 .slick-prev {
   z-index: 99999;
+  margin-left: 25px;
+}
+
+.slick-arrow {
+  position: absolute;
+  right: 50;
+  margin-right: 25px;
+}
+
+.slick-dots {
+  @apply ml-[-10px] hidden;
+}
+
+.category-card:hover .arrow-icon {
+  fill: white;
 }
