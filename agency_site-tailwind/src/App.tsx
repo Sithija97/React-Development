@@ -5,6 +5,7 @@ import {
   Companies,
   Courses,
   Feedbacks,
+  Footer,
   Hero,
   Navbar,
 } from "./components";
@@ -21,6 +22,7 @@ const App = () => {
       <Categories />
       <Feedbacks />
       <CTA />
+      <Footer />
     </>
   );
 };

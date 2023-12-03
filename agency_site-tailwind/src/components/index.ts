@@ -6,3 +6,4 @@ export * from "./achivements";
 export * from "./categories";
 export * from "./feedbacks";
 export * from "./cta";
+export * from "./footer";
