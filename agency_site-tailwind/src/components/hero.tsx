@@ -9,7 +9,7 @@ export const Hero = () => {
           <p className="py-2 text-2xl text-[#20B486] font-medium">
             START TO SUCCESS
           </p>
-          <h1 className="py-2 md:text-6xl text-5xl font-semibold">
+          <h1 className="leading-[72px] py-2 md:text-6xl text-5xl font-semibold">
             Access To <span className="text-[#20B486]">5000+</span> Courses from{" "}
             <span className="text-[#20B486]">300</span> Instructors &
             Institutions

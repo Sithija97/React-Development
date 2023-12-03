@@ -1,4 +1,4 @@
-import { Companies, Courses, Hero, Navbar } from "./components";
+import { Achivements, Companies, Courses, Hero, Navbar } from "./components";
 import "./App.css";
 
 const App = () => {
@@ -8,6 +8,7 @@ const App = () => {
       <Hero />
       <Companies />
       <Courses />
+      <Achivements />
     </>
   );
 };
