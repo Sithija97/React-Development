@@ -1,8 +1,10 @@
 import {
   Achivements,
+  CTA,
   Categories,
   Companies,
   Courses,
+  Feedbacks,
   Hero,
   Navbar,
 } from "./components";
@@ -17,6 +19,8 @@ const App = () => {
       <Courses />
       <Achivements />
       <Categories />
+      <Feedbacks />
+      <CTA />
     </>
   );
 };
