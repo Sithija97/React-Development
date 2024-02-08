@@ -1,6 +1,0 @@
-{
-  "dependencies": {
-    "create-strapi-app": "^4.19.1",
-    "global": "^4.4.0"
-  }
-}
