@@ -1,15 +1,15 @@
-import MonacoEditor from "@uiw/react-monacoeditor";
+import Editor from "@monaco-editor/react";
+import { htmlString } from "../data";
 
 export const ReactMonacoEditor = () => {
   return (
     <>
-      <MonacoEditor
-        language="html"
-        value="<h1>I ♥ react-monacoeditor sithija</h1>"
-        height="300px"
-        options={{
-          theme: "vs-dark",
-        }}
+      <Editor
+        height="90vh"
+        width="90vh"
+        theme="vs-dark"
+        defaultLanguage="html"
+        defaultValue={htmlString}
       />
     </>
   );
