@@ -1,11 +1,14 @@
 import { Home, Layout } from "./components/pages";
+import { BrowserRouter as Router } from "react-router-dom";
 import "./App.css";
 
 function App() {
   return (
-    <Layout>
-      <Home />
-    </Layout>
+    <Router>
+      <Layout>
+        <Home />
+      </Layout>
+    </Router>
   );
 }
 
