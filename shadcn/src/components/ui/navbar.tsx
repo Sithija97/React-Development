@@ -1,6 +1,5 @@
-import { Link } from "react-router-dom";
+import { Link, useLocation } from "react-router-dom";
 import { LucideIcon } from "lucide-react";
-
 import { cn } from "@/lib/utils";
 import { buttonVariants } from "./button";
 import {
@@ -23,6 +22,7 @@ type IProps = {
 };
 
 export const NavBar: FC<IProps> = ({ links, isCollapsed }) => {
+  const { pathname } = useLocation();
   return (
     <TooltipProvider>
       <div
@@ -37,7 +37,10 @@ export const NavBar: FC<IProps> = ({ links, isCollapsed }) => {
                   <Link
                     to={link.href}
                     className={cn(
-                      buttonVariants({ variant: link.variant, size: "icon" }),
+                      buttonVariants({
+                        variant: link.href === pathname ? "default" : "ghost",
+                        size: "icon",
+                      }),
                       "h-9 w-9",
                       link.variant === "default" &&
                         "dark:bg-muted dark:text-muted-foreground dark:hover:bg-muted dark:hover:text-white"
@@ -64,7 +67,10 @@ export const NavBar: FC<IProps> = ({ links, isCollapsed }) => {
                 key={index}
                 to={link.href}
                 className={cn(
-                  buttonVariants({ variant: link.variant, size: "sm" }),
+                  buttonVariants({
+                    variant: link.href === pathname ? "default" : "ghost",
+                    size: "sm",
+                  }),
                   link.variant === "default" &&
                     "dark:bg-muted dark:text-white dark:hover:bg-muted dark:hover:text-white",
                   "justify-start"

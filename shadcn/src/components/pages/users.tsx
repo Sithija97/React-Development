@@ -1,9 +1,9 @@
 import { Title } from "../ui/title";
 
-export const Home = () => {
+export const Users = () => {
   return (
     <div>
-      <Title title="Dashboard" />
+      <Title title="Users" />
     </div>
   );
 };

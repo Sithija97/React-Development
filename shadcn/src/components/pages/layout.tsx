@@ -1,12 +1,9 @@
 import { cn } from "@/lib/utils";
-import { FC, ReactNode } from "react";
+import { FC } from "react";
 import { SideNavBar } from "../organisms";
+import { Outlet } from "react-router-dom";
 
-type IProps = {
-  children: ReactNode;
-};
-
-export const Layout: FC<IProps> = ({ children }) => {
+export const Layout: FC = () => {
   return (
     <section
       className={cn(
@@ -15,12 +12,14 @@ export const Layout: FC<IProps> = ({ children }) => {
       )}
     >
       {/* sidebar */}
-      <div className="border">
+      <div className="border-r">
         <SideNavBar />
       </div>
 
       {/* main page */}
-      <div className="p-8 w-full">{children}</div>
+      <div className="p-8 w-full">
+        <Outlet />
+      </div>
     </section>
   );
 };
