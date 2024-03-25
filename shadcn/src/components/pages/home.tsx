@@ -1,7 +1,8 @@
-import { cardData } from "@/data";
+import { cardData, uesrSalesData } from "@/data";
 import { Card, CardContent } from "../ui/card";
 import { Title } from "../ui/title";
 import { BarChart } from "../ui/barchart";
+import { SalesCard } from "../ui/salescard";
 
 export const Home = () => {
   return (
@@ -24,9 +25,23 @@ export const Home = () => {
           <p className="p-4 font-semibold">Overview</p>
           <BarChart />
         </CardContent>
-        {/* <CardContent>
-          <p className="p-4 font-semibold">Recent Sales</p>
-        </CardContent> */}
+        <CardContent className="flex justify-between gap-4">
+          <section>
+            <p>Recent Sales</p>
+            <p className="text-sm text-gray-400">
+              Tou made 265 sales this month.
+            </p>
+          </section>
+
+          {uesrSalesData.map((data, i) => (
+            <SalesCard
+              key={i}
+              email={data.email}
+              name={data.name}
+              saleAmount={data.saleAmount}
+            />
+          ))}
+        </CardContent>
       </section>
     </div>
   );

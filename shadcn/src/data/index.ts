@@ -1,4 +1,5 @@
 import { CardProps } from "@/components/ui/card";
+import { ISalesProps } from "@/components/ui/salescard";
 import { Activity, CreditCard, DollarSign, Users } from "lucide-react";
 
 export const cardData: CardProps[] = [
@@ -76,5 +77,38 @@ export const data: { name: string; total: number }[] = [
   {
     name: "Dec",
     total: Math.floor(Math.random() * 5000) + 1000,
+  },
+];
+
+export const uesrSalesData: ISalesProps[] = [
+  {
+    name: "Olivia Martin",
+    email: "olivia.martin@email.com",
+    saleAmount: "+$1,999.00",
+  },
+  {
+    name: "Jackson Lee",
+    email: "isabella.nguyen@email.com",
+    saleAmount: "+$1,999.00",
+  },
+  {
+    name: "Isabella Nguyen",
+    email: "isabella.nguyen@email.com",
+    saleAmount: "+$39.00",
+  },
+  {
+    name: "William Kim",
+    email: "will@email.com",
+    saleAmount: "+$299.00",
+  },
+  {
+    name: "Sofia Davis",
+    email: "sofia.davis@email.com",
+    saleAmount: "+$39.00",
+  },
+  {
+    name: "Nayana Davis",
+    email: "nayana.davis@email.com",
+    saleAmount: "+$68.00",
   },
 ];

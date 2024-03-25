@@ -25,7 +25,7 @@ export const BarChart = () => {
           fontSize={12}
           tickFormatter={(value) => `$${value}`}
         />
-        <Bar dataKey={"total"} radius={[4, 4, 0, 0]} fill="#fdff00" />
+        <Bar dataKey={"total"} radius={[4, 4, 0, 0]} fill="#a6fd29" />
       </BarGraph>
     </ResponsiveContainer>
   );
