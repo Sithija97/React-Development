@@ -47,7 +47,7 @@ export const SideNavBar = () => {
             variant: "ghost",
           },
           {
-            title: "Ordrs",
+            title: "Orders",
             href: ORDERS,
             icon: ShoppingCart,
             variant: "ghost",
