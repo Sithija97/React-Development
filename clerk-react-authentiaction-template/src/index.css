@@ -1,0 +1,13 @@
+.spinner {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  height: 100vh;
+}
+
+.header-container {
+  display: flex;
+  align-items: center;
+  justify-content: right;
+  padding: 8px 16px 0 0;
+}

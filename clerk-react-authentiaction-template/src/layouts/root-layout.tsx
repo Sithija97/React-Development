@@ -22,10 +22,7 @@ export const RootLayout = () => {
       publishableKey={PUBLISHABLE_KEY}
     >
       <header className="header">
-        <div>
-          <div>
-            <p>Clerk + React App</p>
-          </div>
+        <div className="header-container">
           <SignedIn>
             <UserButton afterSignOutUrl="/sign-in" />
           </SignedIn>
