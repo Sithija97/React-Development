@@ -9,7 +9,7 @@ export const RootPage = () => {
   return (
     <div>
       <h1>This is the index page</h1>
-      <div>
+      <div className="index-route-container">
         <ul>
           <li>
             <Link to="/sign-up">Sign Up</Link>
